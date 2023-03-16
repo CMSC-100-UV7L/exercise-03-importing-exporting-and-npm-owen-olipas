@@ -15,5 +15,5 @@ This function takes in an array with the following contents: first name, last na
 
 It uses the generateUniqueID() function to generate a unique ID for the user. If the user is saved, the function returns true. Otherwise, it returns false.
 
-## Test
+### Test
 The functions can be tested by calling them in a separate JavaScript file called test.js.
