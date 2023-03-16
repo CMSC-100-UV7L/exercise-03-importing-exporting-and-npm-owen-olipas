@@ -44,7 +44,7 @@ const addAccount = (account_details) => {
     if (flag == false) return false;
     else{
         account_details.push(generateUniqueID(account_details[0], account_details[1])); // push unique id to the array
-        appendFileSync('user.txt', account_details.join(',')+"\n"); // saving data to user.txt with "," delimiter
+        appendFileSync('users.txt', account_details.join(',')+"\n"); // saving data to user.txt with "," delimiter
         console.log("Account created Successfully!")
         return true;
     }
