@@ -1,0 +1,23 @@
+{
+  "name": "exer3",
+  "version": "1.0.0",
+  "description": "Importing/Exporting: NPM",
+  "main": "functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-owen-olipas.git"
+  },
+  "author": "Owen Olipas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-owen-olipas/issues"
+  },
+  "homepage": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-owen-olipas#readme",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "type": "module"
+}
