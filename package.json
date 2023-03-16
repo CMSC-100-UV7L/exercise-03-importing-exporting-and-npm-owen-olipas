@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/CMSC-100-UV7L/exercise-03-importing-exporting-and-npm-owen-olipas#readme",
   "dependencies": {
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "validator": "^13.9.0"
   },
   "type": "module"
 }
