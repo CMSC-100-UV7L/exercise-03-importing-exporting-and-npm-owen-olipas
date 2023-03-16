@@ -3,6 +3,7 @@
 
 import { v4 as uuidv4 } from 'uuid';
 import isEmail from 'validator/lib/isEmail.js';
+import { appendFileSync } from 'node:fs';
 
 // function for generating user's unique id
 const generateUniqueID = (fname, lname) => {
@@ -12,7 +13,6 @@ const generateUniqueID = (fname, lname) => {
 
 const addAccount = (account_details) => {
     var flag = true;
-    // console.log(account_details)
 
     // there should be 4 elements in the array
     if (account_details.length != 4){
@@ -40,7 +40,14 @@ const addAccount = (account_details) => {
         console.log(" ~ Age should be at least 18");
         flag = false;
     }
-}
 
+    if (flag == false) return false;
+    else{
+        account_details.push(generateUniqueID(account_details[0], account_details[1])); // push unique id to the array
+        appendFileSync('user.txt', account_details.join(',')+"\n"); // saving data to user.txt with "," delimiter
+        console.log("Account created Successfully!")
+        return true;
+    }
+}
 
 export { generateUniqueID, addAccount }

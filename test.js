@@ -26,3 +26,8 @@ addAccount(["Alan", "Turing", "aturing@w3c.com", 17]);
 // Test case for multiple invalid input
 console.log("\nMULTIPLE INVALID INPUT")
 addAccount(["", "Turing", "aturingw3c.com", 9]);
+
+// Successful test cases
+console.log("\nSUCCESSFUL INPUT")
+addAccount(["Tim", "Berners-Lee", "tim@w3c.com", 25]);
+addAccount(["Ted", "Nelson", "ted.n@w3c.com", 43]);
